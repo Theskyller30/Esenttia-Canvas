@@ -7,10 +7,39 @@
     /* Texto en negrita en resaltado */
 }
 
-p {
+.title {
     text-align: center;
     color: #1d1d1d;
     font-size: 30px;
+}
+
+.icowococa {
+    margin-right: 0px;
+}
+
+.cocacola {
+    padding-left: 30px;
+    text-align: left;
+    color: #1d1d1d;
+    font-size: 20px;
+}
+
+.esenttia {
+    padding-left: 10px;
+    text-align: left;
+    color: #1d1d1d;
+    font-size: 20px;
+}
+
+.icowoesenttia {
+    margin-right: 42px;
+}
+
+.cabot {
+    padding-left: 10px;
+    text-align: left;
+    color: #1d1d1d;
+    font-size: 20px;
 }
 
 .container5 {
@@ -27,13 +56,14 @@ p {
 
 a {
     text-decoration: none;
+    cursor: pointer;
 }
 
 .card {
     position: relative;
     display: grid;
     grid-template-columns: 250px;
-    grid-template-rows: 180px 15px 160px;
+    grid-template-rows: 180px 15px 260px;
     grid-template-areas: "image" "text" "stats";
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     border-radius: 18px;
@@ -42,7 +72,6 @@ a {
     text-align: center;
     width: 250px;
     transition: 0.5s ease;
-    cursor: pointer;
     margin: 40px;
     border-radius: 18px;
 }
@@ -68,13 +97,12 @@ a {
 
 .card-text p {
     color: grey;
-    font-size: 13px;
-    font-weight: 300;
+    font-size: 10px;
 }
 
 .card-text h2 {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 5px;
 }
 
 .card-stats {
@@ -121,4 +149,16 @@ a {
     height: 690px;
     padding-left: 25%;
     padding-bottom: 4%;
+}
+
+a {
+    color: rgb(36, 36, 36);
+    /* Color de texto por defecto (azul) */
+    transition: color 0.3s ease;
+    /* Transición suave durante 0.3 segundos */
+}
+
+a:hover {
+    color: #0073FF;
+    /* Cambia el color del texto a rojo al hacer hover */
 }

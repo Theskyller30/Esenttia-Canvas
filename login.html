@@ -5,96 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Login</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <input type="checkbox" id="flip">
-        <div class="cover">
-            <div class="front">
-                <a href="https://ibb.co/9byQCDt"><img src="https://i.ibb.co/McPF3v6/fondo1.jpg" alt="fondo1" border="0"></a>
-                <div class="text">
-                    <br><br>
-                    <span class="text-1">Logística integral, <br>Infraestructura, experiencia <br>y factor humano en <br>un solo lugar.</span>
-                    <span class="text-2"><br></span>
-                </div>
-            </div>
-            <div class="back">
-                <a href="https://ibb.co/T8MzKLR"><img src="https://i.ibb.co/hWFpXfH/backImg.jpg" alt="backImg" border="0"></a>
-                <div class="text">
-                    <span class="text-1">Más de 28 años en la <br>industria respaldan nuestra<br>experiencia en el sector <br>logístico local, regional,<br>y nacional </span>
-                    <span class="text-2"></span>
-                </div>
-            </div>
-        </div>
-        <div class="forms">
-
-            <div class="form-content">
-                <div class="login-form">
-                    <form>
-                        <div class="title">Iniciar Sesión</div>
-                        <div class="input-boxes">
-
-                            <div class="input-box">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" placeholder="example@serpomar.com" id="email" required autofocus>
-                            </div>
-
-                            <div class="input-box">
-                                <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="********" id="password" required>
-                            </div>
-
-                            <div>
-                                <button class="button input-box">
-                                    <input class="iniciar" type="submit" value="INGRESAR">
-                                </button>
-                            </div>
-
-                            <div class="text sign-up-text">¿No tienes una cuenta? <label for="flip">Registrate</label></div>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Por terminar el registrarse -->
-
-                <div class="signup-form">
-                    <div class="title">Registrarse</div>
-                    <form action="#">
-                        <div class="input-boxes">
-                            <div class="input-box">
-                                <i class="fas fa-user"></i>
-
-                                <input type="text" placeholder="Introduzca su nombre" id="name" required>
-                            </div>
-                            <div class="input-box">
-                                <i class="fas fa-envelope"></i>
-
-                                <input type="text" placeholder="Introduzca su email" id="signup-email" required>
-                            </div>
-                            <div class="input-box">
-                                <i class="fas fa-lock"></i>
-
-                                <input type="password" placeholder="Introduzca su contraseña" id="signup-password" required>
-                            </div>
-                            <div class="button input-box">
-                                <input type="submit" value="Enviar">
-                            </div>
-                            <div class="text sign-up-text">¿Ya tienes una cuenta? <label for="flip">Inicia sesión</label></div>
-
-
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section>
+        <img class="sxs" src="IMG/sxs.png" alt="">
+        <h2>LOGIN</h2>
+        <form id="loginForm">
+            <label><b>Correo electronico</b></label>
+            <input type="email" placeholder="example@serpomar.com" id="email" required autofocus>
+            <label><b>Contraseña</b></label>
+            <input type="password" placeholder="********" id="password" required>
+            <input class="iniciar" type="submit" value="INGRESAR">
+        </form>
+        <!-- <p>No tienes una cuenta? <a href="signup.html">Registro</a></p> -->
+    </section>
 
     <script src="js/login.js"></script>
 </body>
+
+
 
 </html>

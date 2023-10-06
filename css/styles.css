@@ -1,274 +1,84 @@
-/* Google Font Link */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:ital,wght@1,500&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
 body {
-    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #003f82);
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-image: url("https://i.ibb.co/SyfhGCG/blue.jpg");
-    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+section {
+    text-align: center;
+    background-color: #fff;
     padding: 30px;
-}
-
-.container {
-    position: relative;
-    max-width: 850px;
-    width: 100%;
-    background: #fff;
-    padding: 40px 30px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    perspective: 2700px;
-}
-
-.container .cover {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    height: 100%;
-    width: 50%;
-    z-index: 98;
-    transition: all 1s ease;
-    transform-origin: left;
-    transform-style: preserve-3d;
-}
-
-.container #flip:checked~.cover {
-    transform: rotateY(-180deg);
-}
-
-.container .cover .front,
-.container .cover .back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
     width: 100%;
 }
 
-.cover .back {
-    transform: rotateY(180deg);
+img {
+    width: 410px;
+    height: auto;
 }
 
-.container .cover {
-    backface-visibility: hidden;
+h2 {
+    font-size: 1.5em;
+    color: #0069d8;
 }
 
-.container .cover::before,
-.container .cover::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: #4a4a4a6d;
-    opacity: 0.5;
-    z-index: 12;
-}
-
-.container .cover::after {
-    opacity: 0.3;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-}
-
-.container .cover img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: 10;
-}
-
-.container .cover .text {
-    position: absolute;
-    z-index: 130;
-    height: 100%;
-    width: 100%;
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
-.cover .text .text-1,
-.cover .text .text-2 {
-    padding-block: 0px;
-    font-size: 26px;
-    font-weight: 600;
+label {
+    font-size: 1em;
+    color: #0069d8;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
     color: #fff;
-    text-align: center;
-    line-height: 1.6rem;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.cover .text .text-2 {
-    font-size: 15px;
-    font-weight: 500;
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
-.container .forms {
-    height: 100%;
-    width: 100%;
-    background: #fff;
+.sxs {
+    width: 250px;
+    height: 150px;
 }
 
-.container .form-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+p {
+    font-size: 0.9em;
+    color: #666;
 }
 
-.form-content .login-form,
-.form-content .signup-form {
-    width: calc(100% / 2 - 25px);
-}
-
-.forms .form-content .title {
-    position: relative;
-    font-size: 24px;
-    font-weight: 500;
-    color: #0073FF;
-    padding-bottom: 10px;
-}
-
-.text {
-    font-size: 14px;
-    font-weight: 500;
-    color: #0073FF;
-}
-
-.forms .form-content .title:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 25px;
-}
-
-.forms .signup-form .title:before {
-    width: 20px;
-}
-
-.forms .form-content .input-boxes {
-    margin-top: 30px;
-}
-
-.forms .form-content .input-box {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    width: 100%;
-    margin: 10px 0;
-    position: relative;
-}
-
-.form-content .input-box input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: none;
-    padding: 0 30px;
-    font-size: 16px;
-    font-weight: 500;
-    border-bottom: 2px solid rgb(144, 144, 144);
-    transition: all 0.3s ease;
-}
-
-.form-content .input-box input:focus,
-.form-content .input-box input:valid {
-    border-color: #0073FF;
-}
-
-.form-content .input-box i {
-    position: absolute;
-    color: #0073FF;
-    font-size: 17px;
-}
-
-.forms .form-content .text {
-    font-size: 14px;
-    font-weight: 500;
-    color: #4a4a4a;
-}
-
-.forms .form-content .text a {
+a {
+    color: #007bff;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
-.forms .form-content .text a:hover {
-    text-decoration: underline;
+a:hover {
+    color: #0056b3;
 }
 
-.forms .form-content .button {
-    color: #fff;
-    margin-top: 40px;
-}
 
-.forms .form-content .button input {
-    color: #fff;
-    background: #0073FF;
-    border-radius: 6px;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
-}
-
-.forms .form-content .button input:hover {
-    background: #0044ff;
-}
-
-.forms .form-content label {
-    color: #0073FF;
-    cursor: pointer;
-}
-
-.forms .form-content label:hover {
-    text-decoration: underline;
-}
-
-.forms .form-content .login-text,
-.forms .form-content .sign-up-text {
-    text-align: center;
-    margin-top: 25px;
-}
-
-.container #flip {
-    display: none;
-}
-
-@media (max-width: 730px) {
-    .container .cover {
-        display: none;
-    }
-    .form-content .login-form,
-    .form-content .signup-form {
-        width: 100%;
-    }
-    .form-content .signup-form {
-        display: none;
-    }
-    .container #flip:checked~.forms .signup-form {
-        display: block;
-    }
-    .container #flip:checked~.forms .login-form {
-        display: none;
-    }
-}
-
-#ojo {
-    position: absolute;
-    top: 55%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-}
+/* ANIMACION */

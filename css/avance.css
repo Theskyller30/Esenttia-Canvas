@@ -38,6 +38,10 @@ h2 {
     margin: 0px;
 }
 
+.textu5 {
+    margin: 20px;
+}
+
 .container {
     padding: 50px 0;
     text-align: center;
@@ -158,50 +162,53 @@ h2 {
 
 /* Set the initial values for the animation */
 
+
+/* Set the initial values for the animation */
+
 .chart[data-percent='100'] .outer {
     stroke-dashoffset: 0;
     -webkit-animation: show100 2s;
     animation: show100 2s;
 }
 
-.chart[data-percent='75'] .outer {
-    stroke-dashoffset: 133;
+.chart[data-percent='38'] .outer {
+    stroke-dashoffset: calc(534 - (534 * 38 / 100));
     -webkit-animation: show75 2s;
     animation: show75 2s;
 }
 
-.chart[data-percent='50'] .outer {
-    stroke-dashoffset: 267;
+.chart[data-percent='49'] .outer {
+    stroke-dashoffset: calc(534 - (534 * 49 / 100));
     -webkit-animation: show50 2s;
     animation: show50 2s;
 }
 
 .chart[data-percent='25'] .outer {
-    stroke-dashoffset: 401;
+    stroke-dashoffset: calc(534 - (534 * 25 / 100));
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
 
-.chart[data-percent='28'] .outer {
-    stroke-dashoffset: 385;
+.chart[data-percent='67'] .outer {
+    stroke-dashoffset: calc(534 - (534 * 67 / 100));
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
 
-.chart[data-percent='15'] .outer {
-    stroke-dashoffset: 450;
+.chart[data-percent='44'] .outer {
+    stroke-dashoffset: calc(534 - (534 * 44 / 100));
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
 
 .chart[data-percent='10'] .outer {
-    stroke-dashoffset: 480;
+    stroke-dashoffset: calc(534 - (534 * 10 / 100));
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
 
 .chart[data-percent='20'] .outer {
-    stroke-dashoffset: 430;
+    stroke-dashoffset: calc(534 - (534 * 20 / 100));
     -webkit-animation: show25 2s;
     animation: show25 2s;
 }
@@ -214,7 +221,7 @@ h2 {
 
 @-webkit-keyframes show100 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
         stroke-dashoffset: 0;
@@ -223,7 +230,7 @@ h2 {
 
 @keyframes show100 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
         stroke-dashoffset: 0;
@@ -232,111 +239,78 @@ h2 {
 
 @-webkit-keyframes show75 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 134;
+        stroke-dashoffset: calc(534 - (534 * 75 / 100));
     }
 }
 
 @keyframes show75 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 124;
+        stroke-dashoffset: calc(534 - (534 * 75 / 100));
     }
 }
 
 @-webkit-keyframes show50 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 267;
+        stroke-dashoffset: calc(534 - (534 * 50 / 100));
     }
 }
 
 @keyframes show50 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 267;
+        stroke-dashoffset: calc(534 - (534 * 50 / 100));
     }
 }
 
 @-webkit-keyframes show25 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 401;
+        stroke-dashoffset: calc(534 - (534 * 25 / 100));
     }
 }
 
 @keyframes show25 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 401;
+        stroke-dashoffset: calc(534 - (534 * 25 / 100));
     }
 }
 
-@-webkit-keyframes show15 {
+@-webkit-keyframes show44 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 450;
+        stroke-dashoffset: calc(534 - (534 * 44 / 100));
     }
 }
 
-@keyframes show15 {
+@keyframes show44 {
     from {
-        stroke-dashoffset: 537;
+        stroke-dashoffset: 534;
     }
     to {
-        stroke-dashoffset: 450;
+        stroke-dashoffset: calc(534 - (534 * 44 / 100));
     }
 }
 
-@-webkit-keyframes show28 {
-    from {
-        stroke-dashoffset: 537;
-    }
-    to {
-        stroke-dashoffset: 385;
-    }
-}
 
-@keyframes show28 {
-    from {
-        stroke-dashoffset: 537;
-    }
-    to {
-        stroke-dashoffset: 385;
-    }
-}
-
-@-webkit-keyframes show20 {
-    from {
-        stroke-dashoffset: 537;
-    }
-    to {
-        stroke-dashoffset: 430;
-    }
-}
-
-@keyframes show20 {
-    from {
-        stroke-dashoffset: 537;
-    }
-    to {
-        stroke-dashoffset: 430;
-    }
-}
+/* END set initial animation values */
 
 .timeline {
     width: 1500px;

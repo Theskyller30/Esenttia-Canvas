@@ -5,10 +5,10 @@ loginForm.addEventListener('submit', (e) => {
     const password = document.querySelector('#password').value;
 
     // Verificar si el correo y la contraseña coinciden con los valores permitidos
-    if (email === 'esenttia@serpomar.com' && password === '123456') {
+    if (email === 'sinergia@serpomar.com' && password === '123456') {
         // Usuario válido, muestra un mensaje de bienvenida
         console.log('Inicio de sesión exitoso');
-        alert('Bienvenido Esenttia');
+        alert('Bienvenido Sinergia');
         localStorage.setItem('login_success', JSON.stringify({ email: email }));
         window.location.href = 'index.html';
     } else {
